@@ -1,0 +1,76 @@
+.container-search{
+    padding: 0;
+    margin: 0;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search-bar-div{
+    position: sticky;
+    top: 80px;
+}
+.search-bar-div{
+    background-color: darkslategrey;
+    width: 100%;
+    margin: 0;
+    padding: 1rem ;
+}
+.search-bar{
+    width: 40ch;
+    font-size: large;
+    padding: .5rem 1rem;
+    color: darkslategrey;
+    margin-left: 2rem;
+}
+.user-img{
+    height: 80px;
+    width: 80px;
+    border-radius: 2rem;
+}
+.username{
+    color: darkcyan;
+    text-align: center;
+    opacity: .5;
+}
+.name{
+    color: darkslategrey;
+    font-size: x-large;
+}
+.users-list{
+    display: grid;
+    justify-content: center;
+   
+    gap: 2rem;
+    padding: 0 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.grid-item{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 1rem;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+    box-shadow: 1px 1px .5rem #000; 
+    border-radius: 1rem;
+}
+.follow-button{
+    padding: .5rem 1rem;
+}
+.follow-button:disabled{
+    padding: .5rem 1rem;
+    background-color: #fff;
+    color: gray;
+}
+@media screen and (max-width : 960px) {
+
+    .users-list{
+        display: flex;
+        flex-direction: column;
+        margin: 0 2rem;
+    }
+}

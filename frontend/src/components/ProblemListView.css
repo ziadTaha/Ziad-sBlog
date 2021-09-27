@@ -1,0 +1,96 @@
+.container{
+    display: flex;
+    justify-content:start ;
+    align-items: center;
+    
+    margin: 2rem auto
+}
+.problems-table{
+    border-collapse: collapse;
+    width: 60%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    overflow: hidden;
+    
+}
+.problem-row{
+    line-height: 50px;
+    font-size: large; 
+    
+}
+.theader{
+    line-height: 50px;
+    background-color: darkslategray;
+    color: #fff;
+    font-size: large;
+    
+}
+.theader th {
+    text-align: start;
+    padding-left: 1rem;
+    
+}
+.problem-row td {
+    border-bottom: 2px solid rgb(61, 110, 110);
+    padding-left: 1rem;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.paginator{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: darkslategray;
+}
+.title-td{
+    cursor: pointer;
+}
+.paging-button{
+    margin:0 .25rem;
+    padding: .5rem .5rem;
+    color: darkslategray;
+    font-size: 1.5rem;
+    
+}
+.search-section{
+    display: flex;
+    column-gap: 1.5rem;
+    font-size: large;
+    color: darkslategray;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+label{
+    margin-right: .5rem;
+}
+.search-section div {
+    display: flex;
+}
+button{
+    margin-right: .5rem;
+    padding: 0 1rem;
+    color: #fff;
+    background-color: darkslategray;
+    font-size: large;
+    border-radius: .5rem;
+    font-family: sans-serif;
+} 
+select{
+    border-radius: .5rem;
+    font-size: large;
+    color: darkslategray;
+    background-color: #fff;
+    padding: 0 .5rem;
+}
+input{
+    padding: 0 .5rem;
+    border-radius: .5rem;
+}
+input:focus{
+    outline-color:darkslategray
+}

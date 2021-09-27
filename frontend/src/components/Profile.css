@@ -1,0 +1,16 @@
+.img-profile{
+    height: 40rem;
+    width:  20rem;
+    margin-top:-8rem;
+    padding-top: 8rem;
+    clip-path: circle(10rem at center);
+    margin-bottom: -10rem;
+    z-index: -1;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
