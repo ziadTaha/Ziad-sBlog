@@ -25,8 +25,7 @@ const Navbar = ({user}) => {
                     <li className="nav-item"><Link to='/problems' className="nav-link" onClick={handleClick}>problems</Link></li>
                     <li className="nav-item"><Link to='/profile' className="nav-link" onClick={handleClick}>Profile</Link></li>
                     <li className="nav-item"><Link to='/users' className="nav-link" onClick={handleClick}>Users</Link></li>
-                    <li className="nav-item"><Link to='/about' className="nav-link" onClick={handleClick}>About</Link></li>
-                    <li className="nav-item"><Link to='/contact' className="nav-link" onClick={handleClick}>Contact us</Link></li>
+                    <li className="nav-item"><Link to='/about' className="nav-link" onClick={handleClick}>About Me</Link></li>           
                     <li className="nav-item">{user?<Link to='/' className="nav-link-button" onClick={handleLogout}>Log out</Link>
                     :<Link to='/signUp' className="nav-link-button" onClick={handleClick}>SignUp</Link>}</li>
                 </ul>

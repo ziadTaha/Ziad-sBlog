@@ -15,6 +15,7 @@
     width: 100%;
     margin: 0;
     padding: 1rem ;
+    z-index: 999;
 }
 .search-bar{
     width: 40ch;
@@ -22,6 +23,7 @@
     padding: .5rem 1rem;
     color: darkslategrey;
     margin-left: 2rem;
+    
 }
 .user-img{
     height: 80px;
@@ -32,6 +34,7 @@
     color: darkcyan;
     text-align: center;
     opacity: .5;
+    z-index: 2;
 }
 .name{
     color: darkslategrey;
@@ -57,6 +60,7 @@
     margin-top: 1rem;
     box-shadow: 1px 1px .5rem #000; 
     border-radius: 1rem;
+    background-color: white;
 }
 .follow-button{
     padding: .5rem 1rem;

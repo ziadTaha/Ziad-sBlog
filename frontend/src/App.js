@@ -10,6 +10,7 @@ import AddProblemView from './components/AddProblemView';
 import SingleProblem from './components/SingleProblem';
 import UsersList from './components/UsersList';
 import Home from './components/Home';
+import About from './components/About';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/problems" component = { user? ProblemsListView: LoginForm}/>
         <Route path="/profile" component = { user? Profile: LoginForm}/>
         <Route path="/addProblem" component={AddProblemView}/>
+        <Route path="/about" component={About}/>
         <Route path="/" component = {user? Home: LoginForm}/>
       </Switch>
     </div>
