@@ -46,7 +46,7 @@ const Home = () => {
                 <button className='post-button' type='submit'> post</button>
             </form>
             {blogLoading&&<div className='lds-ring'><div></div><div></div><div></div><div></div></div>}
-            {blogError&& <div>{blogError}</div>}
+            {blogError?<div>{blogError}</div>:<div>blogs</div>}
             <div  className="container">
                 {blogs?
                <ul className='blogs-list'>
