@@ -4,9 +4,9 @@
   "description": "backend server for software engineering practising blogs to keep trak with progress and share thoughts",
   "main": "index.js",
   "scripts": {
-    "test": "cross-env NODE_ENV=test jest --verbose --runInBand ",
-    "start": "cross-env NODE_ENV=production node backend/index.js",
-    "dev": "cross-env NODE_ENV=development nodemon backend/index.js",
+    "test": "jest --verbose --runInBand ",
+    "start": "node backend/index.js",
+    "dev": "nodemon backend/index.js",
     "build:ui": "cd ./frontend/ && rm -rf build && npm run build --prod ",
     "deploy": "git push heroku main",
     "deploy:full": "npm run build:ui && git add . && git commit -m\"uibuild\" && git push && npm run deploy",
