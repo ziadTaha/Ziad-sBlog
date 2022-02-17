@@ -8,7 +8,7 @@ const About = () => {
         <div className="container">
             
                 <img className="personal-img" src={personal}></img>
-                <p className="name"> Ziad Taha</p>
+                <p className="dname"> Ziad Taha</p>
                 <p className="title"> software developer</p>
                 <div className="details">
                     <p className="center"> Computer and Systems department Faculty of Engineering 2021 graduate</p>

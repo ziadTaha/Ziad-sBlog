@@ -18,9 +18,9 @@ loginRouter.post('/', async (request, response) => {
         id: user._id
     }
     const token = jwt.sign(userForToken, config.SECRET)
-
+    console.log(token)
     response.status(200)
-    .cookie("token", token, { httpOnly: true })
+    .cookie('token', token, { httpOnly: true })
     .send({username: user.username, name: user.name, image: user.image, id: user._id})
 })
 
