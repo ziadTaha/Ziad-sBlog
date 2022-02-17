@@ -26,8 +26,9 @@ const errorHandler = (error, request, response, next) => {
 }
 
 const tokenExtractor = (request, response, next) => {
-     
+    
     const authorization = request.headers.cookie
+    console.log(authorization)
     if(authorization && authorization.split('; ')[1].toLowerCase().startsWith('token'))
         request.token = authorization.split('; ')[1].substring(6)
     
