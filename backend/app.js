@@ -34,7 +34,6 @@ app.use('/api/problems', problemsRouter)
 app.use('/api/comments', commentRouter)
 
 if (process.env.NODE_ENV === 'production') {
-    console.log(path.resolve(__dirname,'../backend/build', 'index.html'))
     app.use(express.static(path.join(__dirname, '/build')))
   
     app.get('*', (req, res) =>
