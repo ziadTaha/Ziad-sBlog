@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
     margin: 0;
+    align-content: center;
     width: 100%;
-    align-items: flex-start;
+    align-items: center;
 
 }
 .form-header{
@@ -80,10 +81,30 @@
     color: black;
     font-size: x-large;
 }
-textarea[name ='discription'] {
+textarea[name ='description'] {
    resize: none ;
    font-size: large;
    padding: .5rem 1rem;
    margin-top: 1rem;
+   width: 60ch;
    
+}
+@media screen and (max-width:960px) {
+    textarea[name ='description'] {
+        resize: none ;
+        font-size: small;
+        padding: .5rem 1rem;
+        margin-top: 1rem;
+        width: 45ch;
+        height: 10ch;
+        
+     }
+     .title-div input{
+        width: 20ch;
+        font-size: x-large;
+    }
+    .link-div input{
+        width: 20ch;
+        font-size: x-large;
+    }
 }

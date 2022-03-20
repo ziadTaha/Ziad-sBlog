@@ -42,7 +42,7 @@ const AddProblemView = ({history, match}) => {
             </div>
             <div className="description-div">
                 <label>description</label>
-                <textarea name='description'  rows='6' cols='60' value={description} onChange={({target}) => setDescription(target.value)}></textarea>
+                <textarea name='description'  value={description} onChange={({target}) => setDescription(target.value)}></textarea>
             </div>
             <div>
             <button type='submit'> add probelem</button>
