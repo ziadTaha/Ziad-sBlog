@@ -94,3 +94,29 @@ input{
 input:focus{
     outline-color:darkslategray
 }
+
+@media  screen and (max-width:960px){
+    .container{
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        
+    }
+    .search-section{
+        display: flex;
+        column-gap: 1.5rem;
+        font-size: large;
+        color: darkslategray;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        align-items: center;
+    }
+    .problems-table{
+        border-collapse: collapse;
+        width: 90%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        overflow: hidden;
+        
+    }
+}

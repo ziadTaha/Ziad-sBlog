@@ -39,7 +39,7 @@ const Home = () => {
         setContent('')
     }
     return (
-        <div className='container blogs-container' >
+        <div className='blogs-container' >
             <form className='blog-form' onSubmit = {postNewBlog}>
                 <textarea className='blog-txt-area' value = {content}
                 onChange={({target}) => setContent(target.value)}></textarea>

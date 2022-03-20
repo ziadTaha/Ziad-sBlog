@@ -22,11 +22,11 @@ function App() {
       <Switch>
         <Route path="/login" component = { LoginForm}/>
         <Route path="/signup" component = { SignUpForm}/>
-        <Route path="/users" component= {UsersList}/>
+        <Route path="/users" component= {user?UsersList:LoginForm}/>
         <Route path="/problems/:id" component={user? SingleProblem:LoginForm}/>
         <Route path="/problems" component = { user? ProblemsListView: LoginForm}/>
         <Route path="/profile" component = { user? Profile: LoginForm}/>
-        <Route path="/addProblem" component={AddProblemView}/>
+        <Route path="/addProblem" component={user?AddProblemView:LoginForm}/>
         <Route path="/about" component={About}/>
         <Route path="/" component = {user? Home: LoginForm}/>
       </Switch>

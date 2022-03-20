@@ -53,4 +53,14 @@
     color: white;
     
   }
+  @media screen and (max-width: 960px){
+    .personal-img{
+      height: 480px;
+      width:  360px;
+      margin-top: -50px;
+      clip-path: circle(180px at center);
+      margin-bottom: -50px;
+      z-index: -1;
+  }
+  }
   

@@ -15,7 +15,7 @@
     width: 100%;
     margin: 0;
     padding: 1rem ;
-    z-index: 999;
+    z-index: 1;
 }
 .search-bar{
     width: 40ch;
@@ -75,6 +75,17 @@
     .users-list{
         display: flex;
         flex-direction: column;
-        margin: 0 2rem;
+        margin: 0 1rem;
+        padding: 0;
     }
+    .search-bar{
+        width: 40ch;
+        font-size: small;
+        padding: .5rem 1rem;
+        color: darkslategrey;
+        margin-left: 2rem;
+        z-index: -1;
+        
+    }
+    
 }
